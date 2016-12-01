@@ -1,0 +1,6 @@
+D:\OneDrive\Programming\Visual Studio 2015\Projects\AdventOfCode\Day1\Day1\bin\Debug\Day1.exe.config
+D:\OneDrive\Programming\Visual Studio 2015\Projects\AdventOfCode\Day1\Day1\bin\Debug\Day1.exe
+D:\OneDrive\Programming\Visual Studio 2015\Projects\AdventOfCode\Day1\Day1\bin\Debug\Day1.pdb
+D:\OneDrive\Programming\Visual Studio 2015\Projects\AdventOfCode\Day1\Day1\obj\Debug\Day1.csprojResolveAssemblyReference.cache
+D:\OneDrive\Programming\Visual Studio 2015\Projects\AdventOfCode\Day1\Day1\obj\Debug\Day1.exe
+D:\OneDrive\Programming\Visual Studio 2015\Projects\AdventOfCode\Day1\Day1\obj\Debug\Day1.pdb
