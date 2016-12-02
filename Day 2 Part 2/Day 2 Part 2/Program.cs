@@ -45,7 +45,6 @@ namespace Day_2_Part_1
                 }
                 // Add last number to the full code
                 code += pad[y, x];
-                Console.WriteLine();
             }
 
             // Output
