@@ -33,7 +33,7 @@ namespace Day1
             // Loop through all directions
             for (int i = 0; i < directions.Length; i++)
             {
-                // Move left or right
+                // Move left or right depending on the first character
                 dir = directions[i][0] == 'R' ? turnRight(dir) : turnLeft(dir);
 
                 // Move forward the appropiate amount of steps
