@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -7,7 +6,7 @@ using System.Text;
  * Hashing takes some time, be patient
  */
 
-namespace Day_5_Part_1
+namespace Day_5_Part_2
 {
     class Program
     {
@@ -21,14 +20,15 @@ namespace Day_5_Part_1
 
             string defaulthash = "xxxxxxxxxxxxxxxxx";
             string currentHash = defaulthash;
-            string output = "";
+            string output = "________";
 
             // Create md5 object
             MD5 md5 = MD5.Create();
 
             StringBuilder sb = new StringBuilder();
 
-            for (int i = 0; i < 8; i++)
+            // Loop until all the characters are replaced
+            while (output.Contains("_"))
             {
                 // Loop until the hash starts with 5 zeroes
                 while (currentHash.Substring(0, 5) != "00000")
@@ -53,17 +53,42 @@ namespace Day_5_Part_1
                 }
 
                 // Add the value to the output string
-                output += currentHash[5];
+                try
+                {
+                    // Get the position the character should be placed at
+                    int positionInString = int.Parse(currentHash[5].ToString());
 
-                // Log the value
-                Debug.WriteLine(currentHash[5]);
+                    // If the position is within our 8 char string
+                    if (positionInString >= 0 && positionInString <= 7)
+                    {
+                        // Copy the current output to a stringbuilder
+                        StringBuilder sb1 = new StringBuilder(output);
+
+                        // If we didn't get the char for the position yet
+                        if (sb1[positionInString] == '_')
+                        {
+                            // Assign the right char
+                            sb1[positionInString] = currentHash[6];
+                            output = sb1.ToString();
+                            Console.WriteLine(output);
+                        }
+                    }
+                }
+                catch (FormatException ex)
+                {
+                    // Tried to convert a letter to int, catch exception and do nothing with it.
+                }
 
                 // Reset the hash so the loop doesn't get stuck
                 currentHash = defaulthash;
             }
 
             // Log output
-            Debug.WriteLine("Final answer: " + output);
+            Console.WriteLine("Output:");
+            foreach (char item in output)
+            {
+                Console.Write(item);
+            }
             Console.Read();
         }
     }
