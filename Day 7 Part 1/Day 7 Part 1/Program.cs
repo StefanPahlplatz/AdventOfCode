@@ -14,11 +14,11 @@ namespace Day_7_Part_1
         {
             //string[] alllines = File.ReadAllLines("input.txt");       // Input file
             //string[] alllines = { "wysextplwqpvipxdv[srzvtwbfzqtspxnethm]syqbzgtboxxzpwr[kljvjjkjyojzrstfgrw]obdhcczonzvbfby[svotajtpttohxsh]cooktbyumlpxostt" };
-            string[] alllines = { "aa[xyyx]ecce[lliiiill]ee" };               
+            string[] alllines = { "aa[xyyx]ecce[lliiiill]dd" };               
 
             for (int i = 0; i < alllines.Length; i++)                   // Loop through all lines
             {
-                bool isValid;
+                bool isValid = true;
                 string line = alllines[i];                              // Store the current line in a string
                 List<string> bracketpart = new List<string>();          // Store all strings in the brackets
                 List<string> outsidebrackets = new List<string>();
@@ -50,15 +50,22 @@ namespace Day_7_Part_1
                 foreach (string item in bracketpart)
                 {
                     string first = item.Substring(0, item.Length / 2);
-                    if (first == Reverse(first))
+                    if (first == Reverse(first) && isValid)
+                    {
+                        isValid = true;
+                    }
+                    else
                     {
                         isValid = false;
-                        break;
                     }
+                    Console.WriteLine("\t" + item);
                 }
 
                 Console.WriteLine("\nRest of the string");
-                Console.WriteLine("\t" + line);
+                foreach (string item in outsidebrackets)
+                {
+                    Console.WriteLine("\t" + item);
+                }
                 Console.Read();
             }
         }
