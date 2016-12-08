@@ -4,3 +4,9 @@ D:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\bin\Debug\Day 8 Part 
 D:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\obj\Debug\Day 8 Part 1.csprojResolveAssemblyReference.cache
 D:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\obj\Debug\Day 8 Part 1.exe
 D:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\obj\Debug\Day 8 Part 1.pdb
+F:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\bin\Debug\Day 8 Part 1.exe.config
+F:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\obj\Debug\Day 8 Part 1.exe
+F:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\obj\Debug\Day 8 Part 1.pdb
+F:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\bin\Debug\Day 8 Part 1.exe
+F:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\bin\Debug\Day 8 Part 1.pdb
+F:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\obj\Debug\Day 8 Part 1.csprojResolveAssemblyReference.cache
