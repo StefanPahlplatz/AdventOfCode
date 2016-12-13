@@ -10,3 +10,9 @@ F:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\obj\Debug\Day 8 Part 
 F:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\bin\Debug\Day 8 Part 1.exe
 F:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\bin\Debug\Day 8 Part 1.pdb
 F:\Documents\GitHub\AdventOfCode\Day 8 Part 1\Day 8 Part 1\obj\Debug\Day 8 Part 1.csprojResolveAssemblyReference.cache
+F:\Documents\GitHub\AdventOfCode\Day 8 Part 1 & 2\Day 8 Part 1\bin\Debug\Day 8 Part 1.exe.config
+F:\Documents\GitHub\AdventOfCode\Day 8 Part 1 & 2\Day 8 Part 1\obj\Debug\Day 8 Part 1.exe
+F:\Documents\GitHub\AdventOfCode\Day 8 Part 1 & 2\Day 8 Part 1\obj\Debug\Day 8 Part 1.pdb
+F:\Documents\GitHub\AdventOfCode\Day 8 Part 1 & 2\Day 8 Part 1\bin\Debug\Day 8 Part 1.exe
+F:\Documents\GitHub\AdventOfCode\Day 8 Part 1 & 2\Day 8 Part 1\bin\Debug\Day 8 Part 1.pdb
+F:\Documents\GitHub\AdventOfCode\Day 8 Part 1 & 2\Day 8 Part 1\obj\Debug\Day 8 Part 1.csprojResolveAssemblyReference.cache

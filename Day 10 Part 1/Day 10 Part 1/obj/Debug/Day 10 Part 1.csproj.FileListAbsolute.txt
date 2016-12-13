@@ -1,0 +1,6 @@
+F:\Documents\GitHub\AdventOfCode\Day 10 Part 1\Day 10 Part 1\bin\Debug\Day 10 Part 1.exe.config
+F:\Documents\GitHub\AdventOfCode\Day 10 Part 1\Day 10 Part 1\bin\Debug\Day 10 Part 1.exe
+F:\Documents\GitHub\AdventOfCode\Day 10 Part 1\Day 10 Part 1\bin\Debug\Day 10 Part 1.pdb
+F:\Documents\GitHub\AdventOfCode\Day 10 Part 1\Day 10 Part 1\obj\Debug\Day 10 Part 1.csprojResolveAssemblyReference.cache
+F:\Documents\GitHub\AdventOfCode\Day 10 Part 1\Day 10 Part 1\obj\Debug\Day 10 Part 1.exe
+F:\Documents\GitHub\AdventOfCode\Day 10 Part 1\Day 10 Part 1\obj\Debug\Day 10 Part 1.pdb

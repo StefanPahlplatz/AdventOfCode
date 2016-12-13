@@ -15,6 +15,7 @@ namespace Day_8_Part_1
         static int HEIGHT = 6;
         static char INIT_CHAR = ' ';
         static char PIXEL = '#';
+        static int SLEEP_TIME = 30;
 
         static char[,] display;
         static void Main(string[] args)
@@ -25,6 +26,10 @@ namespace Day_8_Part_1
             Draw();
 
             string[] instructions = File.ReadAllLines("input.txt");
+
+            Console.WriteLine("Press enter to start cracking the code...");
+            Console.Read();
+            Console.Clear();
 
             for (int i = 0; i < instructions.Length; i++)
             {
@@ -46,15 +51,13 @@ namespace Day_8_Part_1
                     int times = int.Parse(Regex.Match(instructions[i], @"(?<=by )\d+").Value);
                     RotateRow(y, times);
                 }
-                Draw();
-                Thread.Sleep(10);
             }
 
             int pixels = GetPixels();
 
             Console.WriteLine("\n\nAmount of pixels lit: {0}", pixels);
             
-            Console.Read();
+            Console.ReadLine();
         }
 
         static void Rect(int x, int y)
@@ -66,6 +69,8 @@ namespace Day_8_Part_1
                     display[j, i] = PIXEL;
                 }
             }
+            Draw();
+            Thread.Sleep(SLEEP_TIME);
         }
 
         static int GetPixels()
@@ -103,6 +108,8 @@ namespace Day_8_Part_1
                         display[x, y] = display[x - 1, y];
                     }
                 }
+                Draw();
+                Thread.Sleep(SLEEP_TIME);
             }
         }
 
@@ -124,6 +131,7 @@ namespace Day_8_Part_1
                     }
                 }
                 Draw();
+                Thread.Sleep(SLEEP_TIME);
             }
         }
 
