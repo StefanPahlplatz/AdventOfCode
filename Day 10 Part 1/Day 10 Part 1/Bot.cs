@@ -1,56 +1,81 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Day_10_Part_1
+public class Bot
 {
-    class Bot
+    public int Number { get; set; }
+    public int GiveHighTo { get; set; }
+    public int GiveLowTo { get; set; }
+    public int[] Values { get; set; }
+    public bool HighToBot { get; set; }
+    public bool LowToBot { get; set; }
+
+    public Bot(int number)
     {
-        public int Nr;
-        public bool has2values = false;
+        InitializeValues();
+        Number = number;
+    }
 
-        private int high;
-        private int low;
+    public Bot(int number, int value)
+    {
+        InitializeValues();
+        Number = number;
+        Values[0] = value;
+    }
 
-        public Bot(int nr, int value)
+    public Bot(int number, int giveLowTo, int giveHighTo, bool lowToBot, bool highToBot)
+    {
+        InitializeValues();
+        Number = number;
+        GiveHighTo = giveHighTo;
+        GiveLowTo = giveLowTo;
+        LowToBot = lowToBot;
+        HighToBot = highToBot;
+    }
+
+    public void ReceiveValue(int value)
+    {
+        int i = ValuesHasSpace();
+        if (i != -1)
+            Values[i] = value;
+        else
+            throw new System.Exception("Bot " + this.Number + " already has 2 values!");
+
+        if (HasSearchValues())
         {
-            Nr = nr;
-            low = value;
-        }
-
-        public void ReceiveValue(int value)
-        {
-            if (value < high)
-                low = value;
-            else if (value > high)
-                high = value;
-
-            if (high != 0 && low != 0)
-                has2values = true;
-
-            if (high == 61 && low == 17)
-            {
-                Debug.WriteLine("ANSWER IS BOT {0}!!!", Nr);
-            }
-        }
-
-        public int GetHigh()
-        {
-            int ret = high;
-            high = 0;
-            has2values = false;
-            return ret;
-        }
-
-        public int GetLow()
-        {
-            int ret = low;
-            low = 0;
-            has2values = false;
-            return ret;
+            Console.WriteLine("Part 1: {0}", this.Number);
         }
     }
+
+    private bool HasSearchValues()
+    {
+        if ((Values[0] == 17 && Values[1] == 61) ||
+            (Values[0] == 61 && Values[1] == 17))
+            return true;
+        return false;
+    }
+
+    public override string ToString()
+    {
+        return string.Format("Bot {0}\t   passes low to {1} and high to {2}." +
+            "\tCurrent values {3}, {4}\tLowToBot: {5}\tHighToBot: {6}", 
+            Number, GiveLowTo, GiveHighTo, Values[0], Values[1], LowToBot, HighToBot);
+    }
+
+    private void InitializeValues()
+    {
+        Values = new int[2];
+        Values[0] = -1;
+        Values[1] = -1;
+    }
+
+    private int ValuesHasSpace()
+    {
+        for (int i = 0; i < Values.Length; i++)
+        {
+            if (Values[i] == -1)
+            return i;
+        }
+        return -1;
+    }
 }
+
