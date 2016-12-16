@@ -2,84 +2,174 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
-namespace Day_10_Part_1
+class Program
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            string[] input = File.ReadAllLines("input.txt");
-            List<Bot> bots = new List<Bot>();
+    public static bool loop = true;
 
-            // Get value for each bot
-            for (int i = 0; i < input.Length; i++)
+    static string[] input = File.ReadAllLines("input.txt");
+    static List<Bot> bots = new List<Bot>();
+    static List<Bin> bins = new List<Bin>();
+
+    static void Main(string[] args)
+    {
+
+        AssignValues();
+
+        AssignRules();
+
+        //PrintBots();
+
+        FindValue();
+
+        Console.Read();
+    }
+
+    private static void FindValue()
+    {
+        while (loop)
+        {
+            foreach (Bot bot in bots)
             {
-                if (input[i][0] == 'v')
+                if (bot.Values[0] != -1 && bot.Values[1] != -1)
                 {
-                    MatchCollection matches = Regex.Matches(input[i], @"\d+");
-                    int value = int.Parse(matches[0].ToString());
-                    int botnr = int.Parse(matches[1].ToString());
-                    bots.Add(new Bot(botnr, value));
+                    // Pass the minimum value
+                    if (bot.LowToBot)
+                    {
+                        var matches = bots.Where(b => b.Number == bot.GiveLowTo);
+                        matches.ToList()[0].ReceiveValue(bot.Values.Min());
+                    }
+                    else
+                    {
+                        var matches = bins.Where(b => b.Number == bot.GiveLowTo);
+                        if (matches.ToList().Count == 1)
+                            matches.ToList()[0].items.Add(bot.Values.Min());
+                        else
+                        {
+                            bins.Add(new Bin(bot.GiveLowTo, bot.Values.Min()));
+                        }
+                    }
+                    bot.Values[Array.IndexOf(bot.Values, bot.Values.Min())] = -1;
+
+                    // Pass the maximum value
+                    if (bot.HighToBot)
+                    {
+                        var matches = bots.Where(b => b.Number == bot.GiveHighTo);
+                        matches.ToList()[0].ReceiveValue(bot.Values.Max());
+                    }
+                    else
+                    {
+                        var matches = bins.Where(b => b.Number == bot.GiveHighTo);
+                        if (matches.ToList().Count == 1)
+                            matches.ToList()[0].items.Add(bot.Values.Max());
+                        else
+                        {
+                            bins.Add(new Bin(bot.GiveLowTo, bot.Values.Max()));
+                        }
+                    }
+                    bot.Values[Array.IndexOf(bot.Values, bot.Values.Max())] = -1;
                 }
             }
 
-            for (int i = 0; i < input.Length; i++)
+            try
             {
-                if (input[i][0] == 'b')
+                Bin bin0 = bins.Where(b => b.Number == 0).ToList()[0];
+                Bin bin1 = bins.Where(b => b.Number == 1).ToList()[0];
+                Bin bin2 = bins.Where(b => b.Number == 2).ToList()[0];
+
+                Console.WriteLine("Part 2: " + bin0.items[0] * bin1.items[0] * bin2.items[0]);
+                break;
+            }
+            catch (Exception ex) { };
+
+        }
+    }
+
+    private static void PrintBots()
+    {
+        foreach (var bot in bots)
+        {
+            if (bot.Number == 123)
+                Console.WriteLine();
+            Console.WriteLine(bot.ToString());
+        }
+    }
+
+    private static void AssignRules()
+    {
+        // Assign the rules to each bot
+        foreach (string line in input)
+        {
+            if (line.StartsWith("bot"))
+            {
+                // If the bot passes it's values to other bots
+                if (new Regex(@"(bot.+){3}").IsMatch(line))
                 {
-                    MatchCollection info = Regex.Matches(input[i], @"\d+");
-                    int giveBot = int.Parse(info[0].ToString());
-                    int lowBot = int.Parse(info[1].ToString());
-                    int highBot = int.Parse(info[2].ToString());
-
-                    for (int j = 0; j < bots.Count; j++)
+                    MatchCollection values = Regex.Matches(line, @"\d+");
+                    var matches = bots.Where(b => b.Number == MatchToInt(values[0]));
+                    if (matches.ToList().Count == 1)
                     {
-                        if (bots[j].Nr == giveBot)
-                        {
-                            int highToGive = bots[j].GetHigh();
-                            int lowToGive = bots[j].GetLow();
+                        matches.ToList()[0].GiveLowTo = MatchToInt(values[1]);
+                        matches.ToList()[0].GiveHighTo = MatchToInt(values[2]);
+                        matches.ToList()[0].HighToBot = true;
+                        matches.ToList()[0].LowToBot = true;
+                    }
+                    else
+                    {
+                        bots.Add(new Bot(MatchToInt(values[0]), MatchToInt(values[1]),
+                            MatchToInt(values[2]), true, true));
+                    }
+                }
+                // If the bot passes it's values to bots or outputs
+                else
+                {
+                    MatchCollection values = Regex.Matches(line, @"bot (\d+)|output (\d+)");
+                    int botnr = int.Parse(values[0].Groups[1].Value);
 
-                            bool gaveLow = false;
-                            for (int b = 0; b < bots.Count; b++)
-                            {
-                                if (bots[b].Nr == lowBot)
-                                {
-                                    bots[b].ReceiveValue(lowToGive);
-                                    Console.WriteLine("gave {0} to {1}", lowToGive, lowBot);
-                                    gaveLow = true;
-                                }
-                            }
-                            if (!gaveLow)
-                            {
-                                bots.Add(new Bot(lowBot, lowToGive));
-                            }
+                    int lowTo = int.Parse(values[1].Groups[values[1].Groups[1].Value == "" ? 2 : 1].Value);
+                    bool lowToBot = values[1].Groups[1].Value != "";
 
-                            bool gaveHigh = false;
-                            for (int b = 0; b < bots.Count; b++)
-                            {
-                                if (bots[b].Nr == highBot)
-                                {
-                                    bots[b].ReceiveValue(highToGive);
-                                    Console.WriteLine("gave {0} to {1}", highToGive, highBot);
-                                    gaveHigh = true;
-                                }
-                            }
-                            if (!gaveHigh)
-                            {
-                                bots.Add(new Bot(highBot, highToGive));
-                            }
-                        }
+                    int highTo = int.Parse(values[2].Groups[values[2].Groups[1].Value == "" ? 2 : 1].Value);
+                    bool highToBot = values[2].Groups[1].Value != "";
+
+                    var matches = bots.Where(b => b.Number == int.Parse(values[0].Groups[1].Value));
+                    if (matches.ToList().Count == 1)
+                    {
+                        matches.ToList()[0].GiveLowTo = lowTo;
+                        matches.ToList()[0].GiveHighTo = highTo;
+                        matches.ToList()[0].LowToBot = lowToBot;
+                        matches.ToList()[0].HighToBot = highToBot;
+                    }
+                    else
+                    {
+                        bots.Add(new Bot(botnr, lowTo, highTo, lowToBot, highToBot));
                     }
                 }
             }
-
-            Console.WriteLine("Done");
-
-            Console.Read();
         }
     }
+
+    private static void AssignValues()
+    {
+        // Assign the values to the bots
+        foreach (string line in input)
+        {
+            if (line.StartsWith("value"))
+            {
+                MatchCollection info = Regex.Matches(line, @"\d+");
+                var matches = bots.Where(b => b.Number == MatchToInt(info[1]));
+                if (matches.ToList().Count == 1)
+                    matches.ToList()[0].ReceiveValue(MatchToInt(info[0]));
+                else
+                    bots.Add(new Bot(MatchToInt(info[1]), MatchToInt(info[0])));
+            }
+        }
+    }
+
+    private static int MatchToInt(Match match)
+    {
+        return int.Parse(match.Value);
+    }
 }
+
