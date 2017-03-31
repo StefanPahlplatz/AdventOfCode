@@ -6,8 +6,7 @@ prevPoints = []
 
 # Read the file
 with open("day1.txt") as f:
-    file = f.read()
-content = file.split(", ")
+    content = f.read().split(", ")
 
 # Process
 for i in range(0, len(content)):
