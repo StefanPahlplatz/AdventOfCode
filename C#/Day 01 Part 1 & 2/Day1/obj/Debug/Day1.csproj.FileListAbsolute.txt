@@ -7,3 +7,9 @@ D:\OneDrive\Programming\Visual Studio 2015\Projects\AdventOfCode\Day1\Day1\obj\D
 F:\Documents\GitHub\AdventOfCode\Day 1\Day1\bin\Debug\Day1.exe.config
 F:\Documents\GitHub\AdventOfCode\Day 1\Day1\obj\Debug\Day1.exe
 F:\Documents\GitHub\AdventOfCode\Day 1\Day1\obj\Debug\Day1.pdb
+E:\Documents\GitHub\AdventOfCode\C#\Day 01 Part 1 & 2\Day1\bin\Debug\Day1.exe.config
+E:\Documents\GitHub\AdventOfCode\C#\Day 01 Part 1 & 2\Day1\bin\Debug\Day1.exe
+E:\Documents\GitHub\AdventOfCode\C#\Day 01 Part 1 & 2\Day1\bin\Debug\Day1.pdb
+E:\Documents\GitHub\AdventOfCode\C#\Day 01 Part 1 & 2\Day1\obj\Debug\Day1.csprojResolveAssemblyReference.cache
+E:\Documents\GitHub\AdventOfCode\C#\Day 01 Part 1 & 2\Day1\obj\Debug\Day1.exe
+E:\Documents\GitHub\AdventOfCode\C#\Day 01 Part 1 & 2\Day1\obj\Debug\Day1.pdb

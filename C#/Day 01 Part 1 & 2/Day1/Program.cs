@@ -41,6 +41,7 @@ namespace Day1
             }
 
             // Output the result
+            Console.WriteLine(directions.Length);
             Console.WriteLine("Final x value: " + location.X);
             Console.WriteLine("Final y valye: " + location.Y);
             Console.WriteLine("Squares coverered: " + Math.Abs(location.X + location.Y));
