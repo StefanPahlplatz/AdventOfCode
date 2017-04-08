@@ -85,6 +85,7 @@ namespace Day_7_Part_1
                 if (valid && hasValidMirror)
                 {
                     possible++;
+                    Console.WriteLine(alllines[i]);
                 }
             }
             Console.WriteLine("Amount of possibilities: " + possible);
@@ -100,13 +101,6 @@ namespace Day_7_Part_1
             }
 
             return false;
-        }
-
-        public static string Reverse(string s)
-        {
-            char[] charArray = s.ToCharArray();
-            Array.Reverse(charArray);
-            return new string(charArray);
         }
     }
 }
