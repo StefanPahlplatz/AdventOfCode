@@ -75,6 +75,7 @@ public class Bot
             if (Values[i] == -1)
             return i;
         }
+        Console.WriteLine("!!!");
         return -1;
     }
 }

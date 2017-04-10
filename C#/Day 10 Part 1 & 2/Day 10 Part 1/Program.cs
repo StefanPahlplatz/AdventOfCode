@@ -19,7 +19,7 @@ class Program
 
         AssignRules();
 
-        //PrintBots();
+        PrintBots();
 
         FindValue();
 
@@ -28,12 +28,15 @@ class Program
 
     private static void FindValue()
     {
+        int counter = 0;
         while (loop)
         {
+            counter++;
             foreach (Bot bot in bots)
             {
                 if (bot.Values[0] != -1 && bot.Values[1] != -1)
                 {
+                    Console.WriteLine("Bot " + bot.Number + " passing " + bot.Values[0] + " - "+ bot.Values[1] + " to " + bot.GiveLowTo + " - " + bot.GiveHighTo);
                     // Pass the minimum value
                     if (bot.LowToBot)
                     {
@@ -81,9 +84,12 @@ class Program
                 Console.WriteLine("Part 2: " + bin0.items[0] * bin1.items[0] * bin2.items[0]);
                 break;
             }
-            catch (Exception ex) { };
-
+            catch (Exception)
+            {
+                // ignored
+            }
         }
+        Console.WriteLine(counter);
     }
 
     private static void PrintBots()
@@ -160,7 +166,9 @@ class Program
                 MatchCollection info = Regex.Matches(line, @"\d+");
                 var matches = bots.Where(b => b.Number == MatchToInt(info[1]));
                 if (matches.ToList().Count == 1)
+                {
                     matches.ToList()[0].ReceiveValue(MatchToInt(info[0]));
+                }
                 else
                     bots.Add(new Bot(MatchToInt(info[1]), MatchToInt(info[0])));
             }
