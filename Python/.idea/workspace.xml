@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="772956be-b9d1-4b4f-a9bd-4f30a24d56ea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day 10/BotClass.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day 10/Day 10 Part 1 &amp; 2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day 10/day10.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../C#/Day 09 Part 1/.vs/Day 9 Part 1/v15/.suo" afterPath="$PROJECT_DIR$/../C#/Day 09 Part 1/.vs/Day 9 Part 1/v15/.suo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/bin/Debug/Day 10 Part 1.exe" afterPath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/bin/Debug/Day 10 Part 1.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/bin/Debug/Day 10 Part 1.pdb" afterPath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/bin/Debug/Day 10 Part 1.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/obj/Debug/Day 10 Part 1.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/obj/Debug/Day 10 Part 1.csprojResolveAssemblyReference.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/obj/Debug/Day 10 Part 1.exe" afterPath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/obj/Debug/Day 10 Part 1.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/obj/Debug/Day 10 Part 1.pdb" afterPath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/obj/Debug/Day 10 Part 1.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterPath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/Bot.cs" afterPath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/Bot.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/Program.cs" afterPath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/Program.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/obj/Debug/Day 10 Part 1.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/../C#/Day 10 Part 1 &amp; 2/Day 10 Part 1/obj/Debug/Day 10 Part 1.csproj.FileListAbsolute.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day 12/Day 12 Part 1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day 12/day12.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,6 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Python$Day_12_Part_1.coverage" NAME="Day 12 Part 1 Coverage Results" MODIFIED="1491848360744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 12" />
     <SUITE FILE_PATH="coverage/Python$Day_07_Part_1.coverage" NAME="Day 07 Part 1 Coverage Results" MODIFIED="1491648928989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 07" />
     <SUITE FILE_PATH="coverage/Python$Day_03_Part_2.coverage" NAME="Day 03 Part 2 Coverage Results" MODIFIED="1490966220637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 03" />
     <SUITE FILE_PATH="coverage/Python$Day_04_Part_1.coverage" NAME="Day 04 Part 1 Coverage Results" MODIFIED="1490971460905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 04" />
@@ -38,7 +28,7 @@
     <SUITE FILE_PATH="coverage/Python$Day_02_Part_1.coverage" NAME="Day 02 Part 1 Coverage Results" MODIFIED="1490961825699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 02" />
     <SUITE FILE_PATH="coverage/Python$Day_08_Part_2.coverage" NAME="Day 08 Part 2 Coverage Results" MODIFIED="1491656441696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 08" />
     <SUITE FILE_PATH="coverage/Python$Day_10_Part_1.coverage" NAME="Day 10 Part 1 Coverage Results" MODIFIED="1491845666568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 10" />
-    <SUITE FILE_PATH="coverage/Python$Day_10_Part_1___2.coverage" NAME="Day 10 Part 1 &amp; 2 Coverage Results" MODIFIED="1491845732718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 10" />
+    <SUITE FILE_PATH="coverage/Python$Day_10_Part_1___2.coverage" NAME="Day 10 Part 1 &amp; 2 Coverage Results" MODIFIED="1491846182769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 10" />
     <SUITE FILE_PATH="coverage/Python$BotClass.coverage" NAME="BotClass Coverage Results" MODIFIED="1491834241555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 10" />
     <SUITE FILE_PATH="coverage/Python$Day_07_Part_2.coverage" NAME="Day 07 Part 2 Coverage Results" MODIFIED="1491650610352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 07" />
     <SUITE FILE_PATH="coverage/Python$Day_05_Part_1.coverage" NAME="Day 05 Part 1 Coverage Results" MODIFIED="1491297085199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 05" />
@@ -52,25 +42,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Day 10 Part 1 &amp; 2.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day 10/Day 10 Part 1 &amp; 2.py">
+      <file leaf-file-name="Day 12 Part 1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day 12/Day 12 Part 1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="82" column="55" lean-forward="true" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#302#771#0" expanded="false" />
-                <element signature="e#803#2641#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="453">
+              <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BotClass.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day 10/BotClass.py">
+      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
+        <entry file="file://E:/Program Files (x86)/Python/Python 3.6.1/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+            <state relative-caret-position="198">
+              <caret line="320" column="0" lean-forward="false" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="day12.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day 12/day12.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -96,6 +92,7 @@
       <find>True</find>
       <find>Bot: 1</find>
       <find>print</find>
+      <find>cpy</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,6 +132,8 @@
         <option value="$PROJECT_DIR$/Day 10/BotClass.py" />
         <option value="$PROJECT_DIR$/Day 10/Day 10 Part 1.py" />
         <option value="$PROJECT_DIR$/Day 10/Day 10 Part 1 &amp; 2.py" />
+        <option value="$PROJECT_DIR$/Day 12/day12.txt" />
+        <option value="$PROJECT_DIR$/Day 12/Day 12 Part 1.py" />
       </list>
     </option>
   </component>
@@ -178,7 +177,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Day 10" />
+              <option name="myItemId" value="Day 12" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -231,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Day 10 Part 1 &amp; 2">
+  <component name="RunManager" selected="Python.Day 12 Part 1">
     <configuration default="false" name="Day 10 Part 1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,25 +245,6 @@
       <module name="Python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="E:\Documents\GitHub\AdventOfCode\Python\Day 10\Day 10 Part 1 &amp; 2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day 10" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\Documents\GitHub\AdventOfCode\Python\Day 10\BotClass.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -322,6 +302,25 @@
       <module name="Python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 10/Day 10 Part 1 &amp; 2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Day 12 Part 1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day 12" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 12/Day 12 Part 1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -497,18 +496,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.Python" />
       <item index="1" class="java.lang.String" itemvalue="Python.Day 10 Part 1" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Bot" />
-      <item index="3" class="java.lang.String" itemvalue="Python.BotClass" />
-      <item index="4" class="java.lang.String" itemvalue="Python.d" />
-      <item index="5" class="java.lang.String" itemvalue="Python.Day 10 Part 1 &amp; 2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.BotClass" />
+      <item index="3" class="java.lang.String" itemvalue="Python.d" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Day 10 Part 1 &amp; 2" />
+      <item index="5" class="java.lang.String" itemvalue="Python.Day 12 Part 1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Day 10 Part 1 &amp; 2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Day 10 Part 1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.d" />
-        <item index="3" class="java.lang.String" itemvalue="Python.BotClass" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Bot" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Day 12 Part 1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Day 10 Part 1 &amp; 2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Day 10 Part 1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.d" />
+        <item index="4" class="java.lang.String" itemvalue="Python.BotClass" />
       </list>
     </recent_temporary>
   </component>
@@ -554,13 +553,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23678647" sideWeight="0.50208336" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3347779" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26977247" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.104477614" sideWeight="0.49185666" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -594,7 +592,14 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="27" />
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -835,23 +840,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Day 09/Day 09 Part 2.py" />
-    <entry file="file://$PROJECT_DIR$/Day 08/Day 08 Part 1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day 09/Day 09 Part 1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day 10/d.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -885,6 +873,48 @@
             <element signature="e#302#771#0" expanded="false" />
             <element signature="e#803#2641#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day 09/Day 09 Part 1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day 08/Day 08 Part 1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Program Files (x86)/Python/Python 3.6.1/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="320" column="0" lean-forward="false" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day 12/day12.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day 12/Day 12 Part 1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
