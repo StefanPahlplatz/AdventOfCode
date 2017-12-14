@@ -15,13 +15,12 @@ input = """116	1470	2610	179	2161	2690	831	1824	2361	1050	2201	118	145	2275	2625
 73	1620	81	1137	812	75	1326	1355	1545	1666	1356	1681	1732	85	128	902
 571	547	160	237	256	30	496	592	385	576	183	692	192	387	647	233"""
 
-
 cs = 0
 x = [[int(float(j)) for j in i] for i in [x.split() for x in input.split('\n')]]
 for row in x:
-    low, high = None, None
     for item in row:
-        if item > high or not high: high = item
-        if item < low or not low: low = item
-    cs += high - low
+        for other in row:
+            if item != other and item % other == 0:
+                cs += max(item, other) / min(item, other)
+
 print(cs)

@@ -10,7 +10,4 @@ for i in range(l):
     if c == n:
         total += c
 
-
-
 print(total)
-print(total == 1044)
